@@ -1,0 +1,12 @@
+{
+  "name": "everythingapp",
+  "version": "0.1.0",
+  "description": "Personal life manager: calendar and email alerts plus an interest-based newsfeed",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  }
+}

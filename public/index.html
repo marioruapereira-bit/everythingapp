@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Day</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Day</h1>
+    <div class="meta"><span id="provider"></span> · updated <span id="updated">–</span>
+      <button id="refresh" type="button">Refresh</button></div>
+  </header>
+
+  <main>
+    <div id="errors"></div>
+
+    <section>
+      <h2>Alerts</h2>
+      <ul id="alerts" class="list"></ul>
+    </section>
+
+    <div class="grid">
+      <section>
+        <h2>Agenda (next 48h)</h2>
+        <ul id="events" class="list"></ul>
+      </section>
+      <section>
+        <h2>Inbox (unread, 3 days)</h2>
+        <ul id="emails" class="list"></ul>
+      </section>
+    </div>
+
+    <section>
+      <h2>My interests</h2>
+      <form id="topics-form">
+        <input id="topics-input" type="text" placeholder="Comma-separated topics, e.g. climate policy, football">
+        <button type="submit">Save</button>
+      </form>
+      <div id="topic-chips"></div>
+    </section>
+
+    <section>
+      <h2>Newsfeed</h2>
+      <ul id="news" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
